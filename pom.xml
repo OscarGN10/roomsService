@@ -59,6 +59,16 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<!-- creamos esta configuracion para crear la imagen docker desde aqui, 
+					BuildPack, esto es otra forma de crearla. -->
+					<image>
+						<name>aleal/${project.artifactId}</name> <!--se colcoa el nombre y hacer referencia al
+						articatId linea 12 del proyecto actual -->
+					</image>
+					<!-- en la terminal ejecutar:
+					 mvn spring-boot:build-image -->
+					
+					
 				</configuration>
 			</plugin>
 		</plugins>
